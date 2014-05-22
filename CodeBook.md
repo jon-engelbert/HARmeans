@@ -19,11 +19,15 @@ for HARmeans project -- means by activity and subject for the Human Activity Rec
 * fBodyGyroMag
 * fBodyGyroJerkMag
 
-The variables with XYZ at the end are actually 3 variable subsets, one for each dimension.  And each varaible set/subset includes mean and std variables, for the mean and standard deviation of the variable.  Where available, the “meanFreq”, the weighted average of the frequency components to obtain a mean frequency, is also included.
-For the acceleration signal from the smartphone accelerometer axes, the units are in standard gravity units 'g'.
-For the angular velocity vector measured by the gyroscope  the units are radians/second.
-## Summary Choices Made
-Mean and Standard Deviation for each of these, and additionally meanFreq (Weighted average of the frequency components to obtain a mean frequency) is included for some.  The mean and standard deviation and meanFreq were all included in the raw data for this analysis.
+The variables with XYZ at the end are actually 3 variable subsets, one for each dimension.  
+Each variable set/subset includes many subfeatures, including mean and standard deviation (std) and others.  
+The original data set includes 560 variables.
+## Output features
+We use only 57 of the original features, specifically the mean and standard deviation variables, and also, where available, the “meanFreq”, or the weighted average of the frequency components to obtain a mean frequency.  
+The script run_analysis.R calculates the average of each feature, averaged over each distinct subject/activity pair, where the features are described above in the Variable Sets section.  
+I.e., a feature is the mean or standard deviation or mean frequency of each of the features.
+* For the acceleration signal from the smartphone accelerometer axes, the units are in standard gravity units 'g'.
+* For the angular velocity vector measured by the gyroscope  the units are radians/second.
 
 ## Instruction List 
 First, download the HAR data set and place it into the directory “~./UCI HAR Dataset”

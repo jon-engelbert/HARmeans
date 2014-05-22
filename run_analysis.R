@@ -76,4 +76,4 @@ colnames(har)[1] <- "activity"
 
 library(plyr)
 activitySubjectData <- ddply(har, c("activity", "subject"), numcolwise(mean))
-write.csv(activitySubjectData, file="MeansByActivityAndSubject.csv")
+write.table(activitySubjectData, file="MeansByActivityAndSubject.txt")

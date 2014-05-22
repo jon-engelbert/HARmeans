@@ -1,23 +1,23 @@
 # Code Book:
 for HARmeans project -- means by activity and subject for the Human Activity Recognition Using Smartphones Dataset
 ## Variable Sets:
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The variables with XYZ at the end are actually 3 variable subsets, one for each dimension.  And each varaible set/subset includes mean and std variables, for the mean and standard deviation of the variable.  Where available, the “meanFreq”, the weighted average of the frequency components to obtain a mean frequency, is also included.
 For the acceleration signal from the smartphone accelerometer axes, the units are in standard gravity units 'g'.
@@ -29,8 +29,8 @@ Mean and Standard Deviation for each of these, and additionally meanFreq (Weight
 ## Instruction List 
 First, download the HAR data set and place it into the directory “~./UCI HAR Dataset”
 Place the script “run_analysis.R” into the same directory, set that as the working directory, and then you can run run_analysis.R.
-The output will be written to the file “MeansByActivityAndSubject.csv”
-(see run_analysis.R for instructions)
+The output will be written to the file “MeansByActivityAndSubject.txt”
+(see run_analysis.R for the program used to generate the output)
 * Extra notes about the “most” original data from which the raw data for this project was derived.   (from the readme.txt that comes with the UCI HAR Dataset)
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 

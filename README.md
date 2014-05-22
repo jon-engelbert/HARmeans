@@ -3,11 +3,13 @@ means by activity and subject for the Human Activity Recognition Using Smartphon
 ## Script location:
 * run_analysis.R
 * (there are a couple of helper functions embedded in this script)
+
+## Instruction List and how the script works
+First, download the HAR data set from
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+and place it into the directory “~./UCI HAR Dataset”
+Place the script “run_analysis.R” into the same directory, set that directory as the working directory, and then run run_analysis.R
+
+
 ## Output location:
 * MeansByActivityAndSubject.txt
-
-## Instruction List 
-First, download the HAR data set and place it into the directory “~./UCI HAR Dataset”
-Place the script “run_analysis.R” into the same directory, set that as the working directory, and then you can run run_analysis.R.
-The output will be written to the file “MeansByActivityAndSubject.txt”
-(see run_analysis.R for the program used to generate the output)

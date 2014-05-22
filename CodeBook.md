@@ -21,13 +21,16 @@ for HARmeans project -- means by activity and subject for the Human Activity Rec
 
 The variables with XYZ at the end are actually 3 variable subsets, one for each dimension.  
 Each variable set/subset includes many subfeatures, including mean and standard deviation (std) and others.  
-The original data set includes 560 variables.
+The original data set includes 560 variables.  
+Each variable includes a collection of data points broken down by subject and activity.
 ## Output features
 We use only 57 of the original features, specifically the mean and standard deviation variables, and also, where available, the “meanFreq”, or the weighted average of the frequency components to obtain a mean frequency.  
 The script run_analysis.R calculates the average of each feature, averaged over each distinct subject/activity pair, where the features are described above in the Variable Sets section.  
 I.e., a feature is the mean or standard deviation or mean frequency of each of the features.
 * For the acceleration signal from the smartphone accelerometer axes, the units are in standard gravity units 'g'.
 * For the angular velocity vector measured by the gyroscope  the units are radians/second.
+The subjects are numbered from 1-30.
+There are 6 named activities.
 
 ## Instruction List 
 First, download the HAR data set and place it into the directory “~./UCI HAR Dataset”

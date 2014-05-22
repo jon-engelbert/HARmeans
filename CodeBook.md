@@ -25,21 +25,15 @@ For the angular velocity vector measured by the gyroscope  the units are radians
 ## Summary Choices Made
 Mean and Standard Deviation for each of these, and additionally meanFreq (Weighted average of the frequency components to obtain a mean frequency) is included for some.  The mean and standard deviation and meanFreq were all included in the raw data for this analysis.
 
-## Experimental Study
 ## Instruction List 
 First, download the HAR data set and place it into the directory “~./UCI HAR Dataset”
 Place the script “run_analysis.R” into the same directory, set that as the working directory, and then you can run run_analysis.R.
 The output will be written to the file “MeansByActivityAndSubject.txt”
 (see run_analysis.R for the program used to generate the output)
-* Extra notes about the “most” original data from which the raw data for this project was derived.   (from the readme.txt that comes with the UCI HAR Dataset)
 
+## Extra notes about the “most” original data
+(from the readme.txt that comes with the UCI HAR Dataset)
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-
-
-
-
 The complete list of variables of each feature vector is available in 'features.txt'

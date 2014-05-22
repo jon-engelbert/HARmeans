@@ -27,10 +27,10 @@ Each variable includes a collection of data points broken down by subject and ac
 We use only 57 of the original features, specifically the mean and standard deviation variables, and also, where available, the “meanFreq”, or the weighted average of the frequency components to obtain a mean frequency.  
 The script run_analysis.R calculates the average of each feature, averaged over each distinct subject/activity pair, where the features are described above in the Variable Sets section.  
 I.e., a feature is the mean or standard deviation or mean frequency of each of the features.
-* For the acceleration signal from the smartphone accelerometer axes, the units are in standard gravity units 'g'.
-* For the angular velocity vector measured by the gyroscope  the units are radians/second.
 The subjects are numbered from 1-30.
 There are 6 named activities.
+* For the acceleration signal from the smartphone accelerometer axes, the units are in standard gravity units 'g'.
+* For the angular velocity vector measured by the gyroscope  the units are radians/second.
 
 ## Instruction List 
 First, download the HAR data set and place it into the directory “~./UCI HAR Dataset”
